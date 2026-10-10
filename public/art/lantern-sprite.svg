@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="640" viewBox="0 0 320 320">
+<defs><radialGradient id="light"><stop stop-color="#fff9c7"/><stop offset=".55" stop-color="#ffd76b"/><stop offset="1" stop-color="#e99b31"/></radialGradient><linearGradient id="metal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b3ccb0"/><stop offset=".5" stop-color="#537e61"/><stop offset="1" stop-color="#214b3a"/></linearGradient><radialGradient id="glow"><stop stop-color="#ffcc59" stop-opacity=".32"/><stop offset="1" stop-color="#ffcc59" stop-opacity="0"/></radialGradient></defs>
+<circle cx="160" cy="158" r="128" fill="url(#glow)"/>
+<path d="M113 223L107 251Q91 250 87 263Q85 279 114 279Q136 279 140 265L141 233M180 233L180 260Q183 278 207 278Q231 278 230 265Q229 250 210 251L209 223" fill="url(#metal)" stroke="#284534" stroke-width="5"/>
+<path d="M83 150Q55 158 60 184Q65 204 91 195M238 150Q265 158 260 184Q255 204 230 195" fill="url(#metal)" stroke="#284534" stroke-width="5"/>
+<path d="M131 82V65Q131 38 160 38Q189 38 189 65V82" fill="none" stroke="#365c43" stroke-width="12"/>
+<path d="M103 99Q105 76 125 76H195Q215 76 217 99L224 117H96Z" fill="url(#metal)" stroke="#284534" stroke-width="5"/>
+<path d="M99 116Q78 160 97 217Q107 240 160 240Q213 240 223 217Q242 160 221 116Z" fill="url(#light)" stroke="#5f4a2a" stroke-width="5"/>
+<path d="M105 124Q94 150 99 180" fill="none" stroke="#fffde1" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+<path d="M115 122L112 224M205 122L208 224" stroke="#365c43" stroke-width="7"/>
+<path d="M95 109H225V124H95ZM99 220H221L212 243H108Z" fill="url(#metal)" stroke="#284534" stroke-width="5" stroke-linejoin="round"/>
+<ellipse cx="140" cy="163" rx="7" ry="11" fill="#503b29"/><ellipse cx="183" cy="163" rx="7" ry="11" fill="#503b29"/>
+<path d="M151 185Q161 197 172 185" fill="none" stroke="#503b29" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="127" cy="181" rx="9" ry="5" fill="#f3a15c"/><ellipse cx="195" cy="181" rx="9" ry="5" fill="#f3a15c"/>
+<path d="M247 65L251 76L262 80L251 84L247 95L243 84L232 80L243 76Z" fill="#d8a23b"/><path d="M61 109L64 117L72 120L64 123L61 131L58 123L50 120L58 117Z" fill="#9db59a"/>
+</svg>

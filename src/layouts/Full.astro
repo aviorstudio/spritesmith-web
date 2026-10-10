@@ -1,0 +1,66 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = "Spritesmith — Raster & vector artwork from your imagination",
+  description = "Create raster and vector sprites from prompts or reference images. Refine through chat, then download a transparent PNG or editable SVG.",
+} = Astro.props;
+const canonical = new URL(Astro.url.pathname, "https://spritesmith.ai");
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  name: "Spritesmith",
+  url: "https://spritesmith.ai",
+  applicationCategory: "DesignApplication",
+  operatingSystem: "Web",
+  description,
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} />
+    <meta name="theme-color" content="#fafaf8" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Spritesmith" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta
+      property="og:image"
+      content="https://spritesmith.ai/social-preview.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Spritesmith: little sprites, big possibilities. Raster PNG and editable SVG artwork."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta
+      name="twitter:image"
+      content="https://spritesmith.ai/social-preview.png"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <script
+      is:inline
+      type="application/ld+json"
+      set:html={JSON.stringify(structuredData)}
+    />
+  </head>
+  <body
+    ><a class="skip-link" href="#main-content">Skip to content</a><slot /></body
+  >
+</html>
