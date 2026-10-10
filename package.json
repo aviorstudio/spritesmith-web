@@ -1,0 +1,25 @@
+{
+  "name": "spritesmith-web",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "typecheck": "astro check",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@primer/octicons": "^19.38.0",
+    "astro": "^7.3.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.10",
+    "@types/primer__octicons": "^19.21.0",
+    "typescript": "6"
+  }
+}
