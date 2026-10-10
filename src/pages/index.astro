@@ -1,0 +1,272 @@
+---
+import Full from "../layouts/Full.astro";
+const appUrl = "https://app.spritesmith.ai";
+const clientUrl = "https://github.com/aviorstudio/spritesmith";
+---
+
+<Full>
+  <div class="folio">
+    <header class="topbar">
+      <a class="wordmark" href="/" aria-label="Spritesmith home"
+        ><img
+          src="/favicon.svg"
+          width="32"
+          height="32"
+          alt=""
+        />spritesmith<span class="brand-dot">.</span></a
+      >
+      <nav aria-label="Main">
+        <a href="#formats">The formats</a><a href="#process">How it works</a><a
+          class="nav-cta"
+          href={appUrl}>Open app <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main id="main-content">
+      <section class="art-cover" aria-labelledby="hero-title">
+        <div class="art-copy">
+          <p class="tag">
+            <span class="status-dot" aria-hidden="true"></span>A SMALL IDEA IS A
+            GOOD START
+          </p>
+          <h1 id="hero-title">
+            Little sprites.<br /><em>Big possibilities.</em>
+          </h1>
+          <p>
+            Turn a prompt into a character, a prop, or your next little world.
+            Create raster or vector artwork, refine it through chat, and take it
+            with you.
+          </p>
+          <a class="cta" href={appUrl}
+            >Create with Spritesmith <span aria-hidden="true">↗</span></a
+          >
+          <div class="art-note">
+            <span class="note-mark" aria-hidden="true">✦</span><p>
+              Start with words. Bring a reference.<br />Leave with a transparent
+              PNG or editable SVG.
+            </p>
+          </div>
+        </div>
+        <figure class="art-desk">
+          <div class="sprite-card raster-card">
+            <div class="card-label">
+              <span>01 / RASTER</span><span class="file-chip">.PNG</span>
+            </div>
+            <div class="checker raster-stage">
+              <img
+                src="/art/lantern-sprite.png"
+                width="640"
+                height="640"
+                alt="Illustrated amber lantern creature with glowing glass and little feet"
+                fetchpriority="high"
+              />
+            </div>
+            <div class="card-foot">
+              <span>A little light for your world.</span><span
+                aria-hidden="true">✦</span>
+            </div>
+          </div>
+          <div class="sprite-card vector-card">
+            <div class="card-label">
+              <span>02 / VECTOR</span><span class="file-chip">.SVG</span>
+            </div>
+            <div class="checker vector-stage">
+              <img
+                src="/art/leaf-sprite.svg"
+                width="320"
+                height="320"
+                alt="Illustrated emerald leaf creature built from clean vector shapes"
+              /><svg
+                class="path-overlay"
+                viewBox="0 0 320 320"
+                aria-hidden="true"
+                ><path
+                  d="M160 54C116 67 76 104 79 153C83 207 132 235 160 250C188 235 237 207 241 153C244 104 204 67 160 54Z"
+                ></path><g
+                  ><rect x="156" y="50" width="8" height="8"></rect><rect
+                    x="75"
+                    y="149"
+                    width="8"
+                    height="8"></rect><rect x="237" y="149" width="8" height="8"
+                  ></rect><rect x="156" y="246" width="8" height="8"></rect></g
+                ></svg>
+            </div>
+            <div class="card-foot">
+              <span>Shapes you can make your own.</span><span aria-hidden="true"
+                >↗</span>
+            </div>
+          </div>
+          <figcaption>
+            Illustrative artwork · not captured product results
+          </figcaption>
+        </figure>
+      </section>
+      <div class="format-strip" aria-label="Available outputs">
+        <span>FROM YOUR IMAGINATION, INTO YOUR PROJECT</span><div>
+          <span>Transparent PNG</span><span aria-hidden="true">✦</span><span
+            >Editable SVG</span>
+        </div>
+      </div>
+      <section class="formats" id="formats" aria-labelledby="formats-title">
+        <div class="section-intro">
+          <p class="tag">TWO WAYS TO MAKE IT YOURS</p><h2 id="formats-title">
+            Same imagination.<br />Different materials.
+          </h2><p>
+            Choose the kind of artwork your idea calls for. Both begin with a
+            prompt; each gives you a different way to work with the result.
+          </p>
+        </div>
+        <div class="format-grid">
+          <article class="format-detail">
+            <div class="format-top">
+              <span class="tag">01 / RASTER</span><span class="file-chip"
+                >PNG</span>
+            </div><h3>For texture.<br />For character.</h3><p>
+              Create image-based artwork with a transparent background. Take the
+              detail, shading, and soft edges into your game, design, or next
+              experiment.
+            </p><div class="material-sample raster-sample" aria-hidden="true">
+              <img
+                src="/art/lantern-sprite.png"
+                width="640"
+                height="640"
+                loading="lazy"
+                alt=""
+              /><span>Pixels, with room to breathe.</span>
+            </div><p class="output-line">
+              <span>YOUR DOWNLOAD</span>Transparent PNG
+            </p>
+          </article>
+          <article class="format-detail">
+            <div class="format-top">
+              <span class="tag">02 / VECTOR</span><span class="file-chip"
+                >SVG + PNG</span>
+            </div><h3>For clean shapes.<br />For the next edit.</h3><p>
+              Create artwork made from vector paths. Download the SVG to scale
+              it and edit its shapes in your vector editor, or use the
+              transparent PNG preview.
+            </p><div class="material-sample vector-sample" aria-hidden="true">
+              <img
+                src="/art/leaf-sprite.svg"
+                width="320"
+                height="320"
+                loading="lazy"
+                alt=""
+              /><span>Paths, ready for your next idea.</span>
+            </div><p class="output-line">
+              <span>YOUR DOWNLOADS</span>Editable SVG + transparent PNG
+            </p>
+          </article>
+        </div>
+      </section>
+      <section
+        class="conversation"
+        id="process"
+        aria-labelledby="process-title"
+      >
+        <div class="conversation-copy">
+          <p class="tag">AN IDEA. A CONVERSATION. A SPRITE.</p><h2
+            id="process-title"
+          >
+            You don’t need<br />the perfect prompt.
+          </h2><p>
+            Describe what you have in mind, choose Raster or Vector, and see
+            where it takes you. Add a reference image when you have a starting
+            point. Ask for a change when you want to try another direction.
+          </p><a class="text-link" href={appUrl}
+            >Start your first conversation <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="chat" aria-label="Illustrative example conversation">
+          <p class="chat-caption tag">AN EXAMPLE CONVERSATION</p><div
+            class="chat-line"
+          >
+            <span>YOU / START</span><p>
+              A friendly little lantern creature for a woodland game.
+            </p>
+          </div><div class="chat-line response">
+            <span>SPRITESMITH / CREATE</span><div class="chat-result">
+              <img
+                src="/art/lantern-sprite.png"
+                width="640"
+                height="640"
+                alt="Illustrative lantern sprite response"
+                loading="lazy"
+              /><p>Your idea,<br />taking shape.</p>
+            </div>
+          </div><div class="chat-line">
+            <span>YOU / REFINE</span><p>
+              Give it a warmer glow and tiny green boots.
+            </p>
+          </div><div class="chat-end">
+            <span>REFINE IT. KEEP IT. TAKE IT WITH YOU.</span><a href={appUrl}
+              >Open app ↗</a>
+          </div>
+        </div>
+      </section>
+      <section class="possibilities" aria-labelledby="library-title">
+        <div class="section-intro">
+          <p class="tag">THERE’S A PLACE FOR YOUR IDEAS</p><h2
+            id="library-title"
+          >
+            Keep the ones you love.<br />Find your next spark.
+          </h2>
+        </div><div class="card-grid">
+          <article>
+            <span class="possibility-icon" aria-hidden="true">↺</span><h3>
+              Come back to it.
+            </h3><p>
+              Keep your artwork and image chats in your library. Pick up an idea
+              when inspiration returns.
+            </p>
+          </article><article>
+            <span class="possibility-icon" aria-hidden="true">✦</span><h3>
+              See what’s out there.
+            </h3><p>
+              Explore the public gallery and creator profiles. Find something
+              that starts a conversation of your own.
+            </p>
+          </article><article>
+            <span class="possibility-icon" aria-hidden="true">↗</span><h3>
+              Give it a new home.
+            </h3><p>
+              Download your artwork and bring it into your project. Transparent
+              backgrounds leave the setting up to you.
+            </p>
+          </article>
+        </div><a class="cta" href={appUrl}
+          >Make your next sprite <span aria-hidden="true">↗</span></a>
+      </section>
+      <section class="cli-section" aria-labelledby="cli-title">
+        <div>
+          <p class="tag">FOR THE WAY YOU WORK</p><h2 id="cli-title">
+            An idea from your terminal, too.
+          </h2><p>
+            The public Spritesmith CLI connects to the same generation API. Use
+            your account’s API key to create raster or vector artwork and
+            download the finished file.
+          </p><a class="text-link" href={clientUrl}
+            >Get the CLI &amp; setup instructions <span aria-hidden="true"
+              >↗</span
+            ></a>
+        </div><div class="terminal">
+          <div class="terminal-heading">
+            <span aria-hidden="true">● ● ●</span><span>SPRITESMITH / CLI</span>
+          </div><pre><code><span class="code-comment"># After configuring your API URL and token</span>
+spritesmith prompt --kind vector \
+  --format svg --out woodland.svg \
+  'A friendly woodland sprite'</code></pre><div
+            class="terminal-foot"
+          >
+            YOUR PROMPT → YOUR FILE
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="bottom">
+      <a class="wordmark" href="/"
+        >spritesmith<span class="brand-dot">.</span></a
+      ><span>Small ideas, made into something.</span><nav aria-label="Footer">
+        <a href={clientUrl}>CLI &amp; API</a><a href={appUrl}>Open app ↗</a>
+      </nav>
+    </footer>
+  </div>
+</Full>
