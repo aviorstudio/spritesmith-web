@@ -18,7 +18,7 @@ concurrency:
 
 jobs:
   ci:
-    runs-on: blacksmith-2vcpu-ubuntu-2404
+    runs-on: ubuntu-24.04
     # This build is seconds. Ten minutes means something has hung, and it should
     # say so here rather than sit until the runner's own timeout hours later.
     timeout-minutes: 10
