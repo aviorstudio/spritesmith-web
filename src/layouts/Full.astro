@@ -7,14 +7,14 @@ interface Props {
 }
 
 const {
-  title = "Spritesmith — Animated vector artwork from your imagination",
+  title = "spritesmith — Animated vector artwork from your imagination",
   description = "Create animated vector sprites with an AI agent. Refine through chat, publish to your library, and export your animations.",
 } = Astro.props;
 const canonical = new URL(Astro.url.pathname, "https://spritesmith.ai");
 const structuredData = {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  name: "Spritesmith",
+  name: "spritesmith",
   url: "https://spritesmith.ai",
   applicationCategory: "DesignApplication",
   operatingSystem: "Web",
@@ -33,7 +33,7 @@ const structuredData = {
     <link rel="canonical" href={canonical} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Spritesmith" />
+    <meta property="og:site_name" content="spritesmith" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
@@ -43,7 +43,7 @@ const structuredData = {
     />
     <meta
       property="og:image:alt"
-      content="Spritesmith: little sprites, big possibilities. Raster PNG and editable SVG artwork."
+      content="spritesmith: little sprites, big possibilities. Raster PNG and editable SVG artwork."
     />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
