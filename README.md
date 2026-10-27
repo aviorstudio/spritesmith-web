@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 33dc198978da7669934ac44842e9594a0f379919cbbf3511f3e87494ea35894b -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 77f1748db0030f22bd0c220b7d86a40420a837645bbaa0e0965201b8c81575f1 -->
 
 # spritesmith website
 
@@ -12,7 +12,7 @@ The page introduces agent-created vector sprites and animations, reference image
 curl -fsSL https://spritesmith.ai/install | sh
 ```
 
-Requires Go. See [spritesmith](https://github.com/aviorstudio/spritesmith#readme) for setup and installation options.
+Prebuilt Linux/macOS binaries are available for x86_64 and arm64. A Go compiler is not required. See [spritesmith](https://github.com/aviorstudio/spritesmith#readme) for setup and installation options.
 
 ## Development
 
