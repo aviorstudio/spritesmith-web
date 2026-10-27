@@ -1,10 +1,18 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: d8b9c3b15167ca59a4cdcaa3e31fe9f0934570c486550535d3549b2cccdbcde1 -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 33dc198978da7669934ac44842e9594a0f379919cbbf3511f3e87494ea35894b -->
 
 # spritesmith website
 
 Static Astro landing page for [spritesmith](https://spritesmith.ai). The application is at [app.spritesmith.ai](https://app.spritesmith.ai); the public [Go CLI](https://github.com/aviorstudio/spritesmith) connects to its generation API.
 
 The page introduces agent-created vector sprites and animations, reference images, chat refinement, the library, gallery, and CLI. Artwork and conversations on the page are illustrations, not captured product results.
+
+## Install the CLI
+
+```sh
+curl -fsSL https://spritesmith.ai/install | sh
+```
+
+Requires Go. See [spritesmith](https://github.com/aviorstudio/spritesmith#readme) for setup and installation options.
 
 ## Development
 
