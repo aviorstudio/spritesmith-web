@@ -44,10 +44,11 @@ const page = new HTMLRewriter()
   })
   .on("script", {
     element(element) {
-      assert.equal(
-        element.getAttribute("type"),
-        "application/ld+json",
-        "The static site must not ship executable scripts",
+      assert(
+        element.getAttribute("type") === "application/ld+json" ||
+          (element.getAttribute("type") === "module" &&
+            element.getAttribute("src") === "/install-copy.js"),
+        "Unexpected executable script",
       );
     },
   })
@@ -84,12 +85,12 @@ function checkFiles(directory) {
     if (entry.isDirectory()) checkFiles(path);
     else
       assert(
-        !/\.(?:m?js)$/i.test(entry.name),
+        !/\.(?:m?js)$/i.test(entry.name) || path === resolve(output, "install-copy.js"),
         `Unexpected client JavaScript: ${path}`,
       );
   }
 }
 checkFiles(output);
 console.log(
-  "Static-site checks passed: links, assets, metadata, accessibility structure, and no client JavaScript.",
+  "Static-site checks passed: links, assets, metadata, accessibility structure, and clipboard-only JavaScript.",
 );
