@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 1dca944c7c96344e036e4d794dc716430c5901bed3fc5e43c6588482fd9e9225 -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 5ddf8ec76190a821894f816836aa50d663248ead53721cc45e357c0fa97cc6c4 -->
 
 # spritesmith website
 
@@ -20,7 +20,7 @@ Or with mise:
 mise use --global github:aviorstudio/spritesmith@latest
 ```
 
-Each install command has a Copy button with confirmation. If clipboard access is unavailable, the command remains selectable for manual copying.
+An icon-only copy control sits on the right inside each install-command outline and shows a checkmark after copying. If clipboard access is unavailable, the command remains selectable for manual copying.
 
 Prebuilt Linux/macOS binaries are available for x86_64 and arm64. A Go compiler is not required. See [spritesmith](https://github.com/aviorstudio/spritesmith#readme) for setup and installation options.
 
