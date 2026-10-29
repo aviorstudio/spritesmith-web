@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 77f1748db0030f22bd0c220b7d86a40420a837645bbaa0e0965201b8c81575f1 -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 1dca944c7c96344e036e4d794dc716430c5901bed3fc5e43c6588482fd9e9225 -->
 
 # spritesmith website
 
@@ -8,9 +8,19 @@ The page introduces agent-created vector sprites and animations, reference image
 
 ## Install the CLI
 
+With curl:
+
 ```sh
 curl -fsSL https://spritesmith.ai/install | sh
 ```
+
+Or with mise:
+
+```sh
+mise use --global github:aviorstudio/spritesmith@latest
+```
+
+Each install command has a Copy button with confirmation. If clipboard access is unavailable, the command remains selectable for manual copying.
 
 Prebuilt Linux/macOS binaries are available for x86_64 and arm64. A Go compiler is not required. See [spritesmith](https://github.com/aviorstudio/spritesmith#readme) for setup and installation options.
 
@@ -28,4 +38,4 @@ mise exec -- bun run preview
 
 `make check` installs frozen dependencies, type-checks, builds, and verifies the static output. `make test` checks an existing build. Stop the foreground development server with Ctrl-C; `make clean` removes generated output.
 
-The website ships no client JavaScript. CI builds and checks the site; hosting is configured separately.
+The website ships a small clipboard handler for the install-command Copy buttons. CI builds and checks the site; hosting is configured separately.
