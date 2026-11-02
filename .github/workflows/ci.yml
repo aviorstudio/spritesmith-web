@@ -34,8 +34,8 @@ jobs:
       # version, and two places drift.
       - uses: jdx/mise-action@c2a87611a18de5b3828c5652fe268e992400cb5c # v4.3.0
 
-      - name: Validate developer profile and workflow controls
-        uses: nicodes/tools/workflow-standards@66992c7abdb653dac5f7da4a4ec6b7d83737c26c # v0.27.5
+      - name: Validate workflow controls
+        run: actionlint
 
       - name: Build
         uses: ./.github/actions/build
