@@ -14,8 +14,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@primer/octicons": "^19.41.0",
-    "astro": "^7.4.2"
+    "@primer/octicons": "^19.42.0",
+    "astro": "^7.4.4"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.12",
