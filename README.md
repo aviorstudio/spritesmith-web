@@ -1,4 +1,4 @@
-<!-- Generated from private documentation source. Do not edit directly. Source SHA256: 84d0f1eac33f6e1f49462caee75b0d7537cc8b384b46dc23f8e6b235493d1f0e -->
+<!-- Generated from private documentation source. Do not edit directly. Source SHA256: d7255d1775fcff27c5376bf99392b20cc6f998ff6089add2e083c4a767a51bf0 -->
 
 # spritesmith website
 
@@ -23,3 +23,9 @@ mise use --global github:aviorstudio/spritesmith@latest
 An icon-only copy control sits on the right inside each install-command outline and shows a checkmark after copying. If clipboard access is unavailable, the command remains selectable for manual copying.
 
 Prebuilt Linux/macOS binaries are available for x86_64 and arm64. A Go compiler is not required. See [spritesmith](https://github.com/aviorstudio/spritesmith#readme) for setup and installation options.
+
+## Development
+
+Development setup requires Mise and host Python 3.11 or newer on Unix, or Python 3.13 or newer on Windows, before `mise run setup`. These prerequisites apply to local development.
+
+Run `mise run setup` once to prepare the pinned tools and frozen dependencies. `mise run check` type-checks, builds and verifies the static output; `mise run test` verifies an existing build. `mise run dev` starts the foreground development server; stop it with Ctrl-C. Build and test tasks require prepared tools and do not install dependencies.
